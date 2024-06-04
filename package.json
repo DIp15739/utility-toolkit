@@ -1,0 +1,12 @@
+{
+  "name": "utilkit",
+  "version": "1.0.0",
+  "description": "Utilkit is a utility library for JavaScript and TypeScript that provides a set of useful functions for various tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["utility", "library", "JavaScript", "TypeScript", "functions", "tools"],
+  "author": "Dip Vachhani",
+  "license": "MIT"
+}
