@@ -1,41 +1,41 @@
-# Utilkit
+# utility-toolkit
 
-Utilkit is a utility library for JavaScript and TypeScript that provides a set of useful functions for various tasks.
+utility-toolkit is library for JavaScript and TypeScript that provides a set of useful functions for various tasks.
 
 ## Features
 
-- **TypeScript Support**: Utilkit is written in TypeScript and provides full type definitions.
+- **TypeScript Support**: utility-toolkit is written in TypeScript and provides full type definitions.
 - **CRUD Operations on Local Storage**: Easily manage data in the browser's local storage with both synchronous and asynchronous support and error handling.
 
 ## Installation
 
-You can install Utilkit via npm:
+You can install utility-toolkit via npm:
 
 ```bash
-npm install utilkit
+npm install utility-toolkit
 ```
 
 ## Usage
 
-### Importing Utilkit
+### Importing utility-toolkit
 
 using **`require`**
 ```javascript
-const { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } = require('utilkit');
+const { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } = require('utility-toolkit');
 ```
 Using **`from`**
 ```javascript
-import { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } from 'utilkit';
+import { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } from 'utility-toolkit';
 ```
 
 ## CRUD Operations on Local Storage
-Utilkit provides functions to create, read, update, and delete data in the local storage, with both synchronous and asynchronous methods.
+utility-toolkit provides functions to create, read, update, and delete data in the local storage, with both synchronous and asynchronous methods.
 
 #### Example
 Here's a full example demonstrating the CRUD operations:
 
 ```javascript
-import { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } from 'utilkit';
+import { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } from 'utility-toolkit';
 
 // Synchronous operations
 setItemSync('username', 'john_doe');

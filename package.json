@@ -1,7 +1,7 @@
 {
-  "name": "utilkit",
+  "name": "utility-toolkit",
   "version": "1.0.0",
-  "description": "Utilkit is a utility library for JavaScript and TypeScript that provides a set of useful functions for various tasks",
+  "description": "utility-toolkit is library for JavaScript and TypeScript that provides a set of useful functions for various tasks",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
