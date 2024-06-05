@@ -7,4 +7,4 @@ export {
   getItemAsync,
   removeItemAsync,
   clearAsync,
-} from './storage';
+} from './storage'
