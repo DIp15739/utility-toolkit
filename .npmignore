@@ -1,0 +1,17 @@
+# Directories to ignore
+src
+.github
+.husky
+.vscode
+docs
+node_modules
+tests
+
+# Files to ignore
+.commitlintrc.js
+.eslintrc.js
+.gitignore
+.prettierrc
+jest.config.js
+package-lock.json
+tsconfig.json
