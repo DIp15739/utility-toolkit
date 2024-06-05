@@ -1,6 +1,6 @@
 {
   "name": "utility-toolkit",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "utility-toolkit is library for JavaScript and TypeScript that provides a set of useful functions for various tasks",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,9 @@
     "commit": "git-cz",
     "docs": "typedoc --out docs src"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "utility",
     "library",
@@ -53,11 +56,13 @@
   "lint-staged": {
     "*.js": [
       "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "typedoc --out docs src"
     ],
     "*.ts": [
       "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "typedoc --out docs src"
     ]
   },
   "config": {
