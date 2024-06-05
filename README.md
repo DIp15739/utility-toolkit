@@ -21,11 +21,11 @@ npm install utility-toolkit
 
 using **`require`**
 ```javascript
-const { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } = require('utility-toolkit');
+const { setItemLS, getItemLS, removeItemLS, clearLS, setItemAsyncLS, getItemAsyncLS, removeItemAsyncLS, clearAsyncLS } = require('utility-toolkit');
 ```
 Using **`from`**
 ```javascript
-import { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } from 'utility-toolkit';
+import { setItemLS, getItemLS, removeItemLS, clearLS, setItemAsyncLS, getItemAsyncLS, removeItemAsyncLS, clearAsyncLS } from 'utility-toolkit';
 ```
 
 ## CRUD Operations on Local Storage
@@ -35,17 +35,26 @@ utility-toolkit provides functions to create, read, update, and delete data in t
 Here's a full example demonstrating the CRUD operations:
 
 ```javascript
-import { setItemSync, getItemSync, removeItemSync, clearSync, setItemAsync, getItemAsync, removeItemAsync, clearAsync } from 'utility-toolkit';
+import { setItemLS, getItemLS, removeItemLS, clearLS, setItemAsyncLS, getItemAsyncLS, removeItemAsyncLS, clearAsyncLS } from 'utility-toolkit';
+
+const user = {
+  username: 'john_doe',
+  email: 'john@example.com',
+  preferences: {
+    theme: 'dark',
+    notifications: true
+  }
+};
 
 // Synchronous operations
-setItemSync('username', 'john_doe');
-console.log(getItemSync('username')); // Outputs: 'john_doe'
-removeItemSync('username');
-clearSync();
+setLS('user', user);
+console.log(getLS('user')); // Outputs: { username: 'john_doe', email: 'john@example.com', preferences: { theme: 'dark', notifications: true } }
+removeLS('user');
+clearLS();
 
 // Asynchronous operations
-await setItemAsync('username', 'jane_doe');
-console.log(await getItemAsync('username')); // Outputs: 'jane_doe'
-await removeItemAsync('username');
-await clearAsync();
+await setAsyncLS('user', anotherUser);
+console.log(await getAsyncLS('user')); // Outputs: { username: 'jane_doe', email: 'jane@example.com', preferences: { theme: 'light', notifications: false } }
+await removeAsyncLS('user');
+await clearAsyncLS();
 ```

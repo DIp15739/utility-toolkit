@@ -1,4 +1,4 @@
-export function setItemSync(key: string, value: unknown): void {
+export function setItemLS(key: string, value: unknown): void {
   try {
     const stringValue = JSON.stringify(value)
     localStorage.setItem(key, stringValue)
@@ -7,7 +7,10 @@ export function setItemSync(key: string, value: unknown): void {
   }
 }
 
-export async function setItemAsync(key: string, value: unknown): Promise<void> {
+export async function setItemAsyncLS(
+  key: string,
+  value: unknown
+): Promise<void> {
   try {
     const stringValue = JSON.stringify(value)
     await Promise.resolve(localStorage.setItem(key, stringValue))
@@ -17,7 +20,7 @@ export async function setItemAsync(key: string, value: unknown): Promise<void> {
   }
 }
 
-export function getItemSync(key: string): unknown {
+export function getItemLS(key: string): unknown {
   try {
     const item = localStorage.getItem(key)
     return item ? JSON.parse(item) : null
@@ -27,7 +30,7 @@ export function getItemSync(key: string): unknown {
   }
 }
 
-export async function getItemAsync(key: string): Promise<unknown> {
+export async function getItemAsyncLS(key: string): Promise<unknown> {
   try {
     const item = await Promise.resolve(localStorage.getItem(key))
     return item ? JSON.parse(item) : null
@@ -37,7 +40,7 @@ export async function getItemAsync(key: string): Promise<unknown> {
   }
 }
 
-export function removeItemSync(key: string): void {
+export function removeItemLS(key: string): void {
   try {
     localStorage.removeItem(key)
   } catch (error) {
@@ -45,7 +48,7 @@ export function removeItemSync(key: string): void {
   }
 }
 
-export async function removeItemAsync(key: string): Promise<void> {
+export async function removeItemAsyncLS(key: string): Promise<void> {
   try {
     await Promise.resolve(localStorage.removeItem(key))
   } catch (error) {
@@ -54,7 +57,7 @@ export async function removeItemAsync(key: string): Promise<void> {
   }
 }
 
-export function clearSync(): void {
+export function clearLS(): void {
   try {
     localStorage.clear()
   } catch (error) {
@@ -62,7 +65,7 @@ export function clearSync(): void {
   }
 }
 
-export async function clearAsync(): Promise<void> {
+export async function clearAsyncLS(): Promise<void> {
   try {
     await Promise.resolve(localStorage.clear())
   } catch (error) {
