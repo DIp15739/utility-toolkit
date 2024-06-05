@@ -1,10 +1,10 @@
 export {
-  setItemSync,
-  getItemSync,
-  removeItemSync,
-  clearSync,
-  setItemAsync,
-  getItemAsync,
-  removeItemAsync,
-  clearAsync,
-} from './storage';
+  setItemLS,
+  getItemLS,
+  removeItemLS,
+  clearLS,
+  setItemAsyncLS,
+  getItemAsyncLS,
+  removeItemAsyncLS,
+  clearAsyncLS,
+} from './local-storage'
