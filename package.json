@@ -1,8 +1,9 @@
 {
   "name": "utility-toolkit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "utility-toolkit is library for JavaScript and TypeScript that provides a set of useful functions for various tasks",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "type": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -12,6 +13,7 @@
     "docs": "typedoc --out docs src"
   },
   "files": [
+    "dist/**/*",
     "dist"
   ],
   "keywords": [
