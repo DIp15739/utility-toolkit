@@ -1,6 +1,6 @@
 {
   "name": "utility-toolkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "utility-toolkit is library for JavaScript and TypeScript that provides a set of useful functions for various tasks",
   "main": "index.js",
   "scripts": {
